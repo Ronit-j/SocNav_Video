@@ -4,25 +4,24 @@ import os
 import sys
 
 segments = [
-	("images/slide.png", 60, ''),
-	# ("images/scn1.png", 30, ''),
-	("images/scn2.png", 30, ''),
-	("images/scn3.png", 30, ''),
-	("images/scn4.png", 30, ''),
+	("images/slide.png", 70, ''),
+	("images/scn2.png", 35, ''),
+	("images/scn3.png", 35, ''),
+	("images/scn4.png", 35, ''),
 	("images/view1.png", 75, ''),
 	("frames_trajectory_1/", 1, 'scale1_extend'),
 	("images/view2.png", 60, ''),
 	("frames_trajectory_2/", 1, 'scale1_extend'),
-	("images/people.png", 40, ''),
-	("frames_3/", 20, 'scale2_extend'),
-	("images/rotation.png", 40, ''),
-	("frames_5/", 5, 'scale2_extend'),
-	("images/distance.png", 40, ''),
+	("images/people.png", 60, ''),
+	("frames_3/", 25, 'scale2_extend'),
+	("images/rotation.png", 65, ''),
+	("frames_5/", 6, 'scale2_extend'),
+	("images/distance.png", 65, ''),
 	("frames_7/", 2, 'scale2_extend'),
-	("images/slide.png", 10, ''),
+	("images/slide.png", 6, ''),
 ]
 
-frame_rate = 18
+frame_rate = 20
 image_width, image_height = 1280, 680
 image_size = (image_width, image_height)
 # Define the codec and create VideoWriter object.The output is stored in 'outpy.avi' file.
@@ -60,7 +59,7 @@ def scale_extend(image, scale):
 	left = difference
 	right = image_width-image.shape[1]-left
 	border_type = cv2.BORDER_CONSTANT
-	color = [255,255,255]
+	color = [0, 0, 0]
 	image = cv2.copyMakeBorder(image, 0, 0, left, right, border_type, value=color)
 	return image
 

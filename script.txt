@@ -1,0 +1,14 @@
+This video demonstrates how our work is able to model the compliance with social rules.
+
+You can see that the robot can go to its destination without causing any disturbance because the network properly models social navigation conventions.
+ 
+It can also be appreciated by the different shades of red, that the network has learned that going through a human-to-human interactions is even worse than going through human-to-object interactions.
+ 
+The rest of the sequences in this video demonstrate different properties.
+Pause or replay the video if needed.
+
+In the first example we demonstrate how the network is able to grasp that people are more relaxed about social distances as the people density increases. This can be appreciated by looking at how the black rings get thinner. 
+
+The second sequence demonstrates the effect of the angle of the robot in the interactions. You can see that the network learns that if the robot really needs to cross an interaction line, the least disturbing angle to do it is perpendicularly.
+
+The third sequence demonstrates the effect of the distance in an interaction. 
